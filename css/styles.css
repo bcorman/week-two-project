@@ -1,0 +1,46 @@
+body {
+  background-color: #F4EFFF);
+}
+
+header {
+  background-color: #D9FFF1;
+  border-radius: 75px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 80%;
+  margin: 0 10% 4em;
+  padding: 2em 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  /* width: 80%;
+  max-width:80%;
+  margin: 0 10% 4em; */
+}
+
+.cart-menu {
+  align-self: flex-start;
+}
+
+img {
+  height: 400px;
+  width: 360px;
+}
+
+h1, h2, p, span, button, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, span, button, {
+  font-weight: 700;
+}
