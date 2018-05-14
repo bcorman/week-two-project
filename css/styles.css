@@ -1,10 +1,21 @@
 body {
   background-color: #F4EFFF);
+  box-sizing: border-box;
+}
+header, footer {
+  background-color: #D9FFF1;
+  border-radius: 150px;
+  border: 2px solid black;
 }
 
-header {
-  background-color: #D9FFF1;
-  border-radius: 75px;
+#store {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width:90%;
+  margin: 0 2.5% 4em;
+
 }
 
 .container {
@@ -13,34 +24,103 @@ header {
   align-items: center;
   width: 80%;
   max-width: 80%;
-  margin: 0 10% 4em;
+  margin: 0 10% 1em;
   padding: 2em 0;
 }
 
-.column {
+article {
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 28%;
+  min-width: 25%;
+  margin: 1em 1.6667%;
+  height: 50em;
+  padding: .5em;
 }
 
-main {
-  /* width: 80%;
-  max-width:80%;
-  margin: 0 10% 4em; */
-}
 
 .cart-menu {
-  align-self: flex-start;
+  align-self: flex-end;
 }
 
 img {
-  height: 400px;
-  width: 360px;
+  height: 60%;
+  width: 100%;
+  margin-bottom: 2em;
 }
 
-h1, h2, p, span, button, input {
+#store p {
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, p, span, button, input {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, span, button, {
+h1, h2, h3, span, button, {
   font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+.cart {
+  border: 1px solid pink;
+  align-self: flex-start;
+  width: 20em;
+  margin-left: 1em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+/* Buttons */
+
+button {
+  text-align: center;
+  width: 8em;
+  line-height: 1.618em;
+  background-color: none;
+  border-radius: 10px;
+  margin: 0 1em;
+}
+
+#store button {
+  align-self: center;
+  background-color: lightgrey;
+}
+
+header button:hover {
+  background-color: lightgrey;
+}
+
+header button:focus {
+  outline: thin dotted
 }
