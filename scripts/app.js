@@ -160,9 +160,10 @@ var ipsum = 'Lorem ipsum dolor sit amet a maecenas adipiscing nec penatibus pret
 var robotButton = document.getElementById('robots');
 var puppyButton = document.getElementById('puppies');
 var photoButton = document.getElementById('photos');
+
+
+
 var cartItem = [];
-
-
 
 // Functions
 
@@ -173,6 +174,7 @@ function clearAllItems() {
 
 function loadItems(inventory) {
   clearAllItems();
+  cartItem = [];
   for (var i = 0; i < inventory.length; i++) {
     var currentItem = inventory[i];
     var article = document.createElement('article');
