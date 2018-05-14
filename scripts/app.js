@@ -153,6 +153,9 @@ var cart = [];
 //Global shortcut variables
 
 var store = document.getElementById('store');
+var cart = document.getElementById('cart');
+var added = document.getElementById('added');
+var total = document.getElementById('total');
 var ipsum = 'Lorem ipsum dolor sit amet a maecenas adipiscing nec penatibus pretium nisi tincidunt leo amet. Etiam pretium imperdiet massa vitae nam justo veni aenean metus. Penatibus lorem ipsum vitae nam tellus hendrerit ut eros ante dictum ultricies. Dictum adipiscing eleifend aenean.';
 var robotButton = document.getElementById('robots');
 var puppyButton = document.getElementById('puppies');
@@ -161,6 +164,9 @@ var photoButton = document.getElementById('photos');
 
 
 // Functions
+function addToCart() {
+
+}
 
 function clearAllItems() {
   store.innerHTML = '';
@@ -176,6 +182,7 @@ function loadItems(inventory) {
     var paragraph = document.createElement('p');
     var button = document.createElement('button');
     var title = document.createElement('h3');
+    var listItem;
 
     store.appendChild(article);
     article.appendChild(title);
@@ -187,6 +194,11 @@ function loadItems(inventory) {
     paragraph.textContent = ipsum;
     article.appendChild(button);
     button.textContent = 'Add To Cart';
+    button.addEventListener('click', function() {
+      listItem = document.createElement('li');
+      listItem.textContent = currentItem.name;
+      added.appendChild(listItem);
+    });
   }
 }
 
@@ -202,8 +214,7 @@ function loadPhotos() {
   loadItems(veryOddStockPhotos);
 }
 
-//Buttons
-
+//Button Event Listeners
 robotButton.addEventListener('click', loadRobot);
 photoButton.addEventListener('click', loadPhotos);
 puppyButton.addEventListener('click', loadPuppies);

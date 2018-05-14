@@ -25,29 +25,24 @@ header, footer {
   width: 80%;
   max-width: 80%;
   margin: 0 10% 1em;
-  padding: 2em 0;
 }
 
 article {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border: 1px solid black;
   border-radius: 25px;
   width: 28%;
   min-width: 25%;
   margin: 1em 1.6667%;
-  height: 50em;
+  height: 35em;
   padding: .5em;
 }
 
-
-.cart-menu {
-  align-self: flex-end;
-}
-
 img {
-  height: 60%;
-  width: 100%;
+  height: 40%;
+  width: 90%;
   margin-bottom: 2em;
 }
 
@@ -123,4 +118,29 @@ header button:hover {
 
 header button:focus {
   outline: thin dotted
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-shopping-cart {
+  font-size: 2em;
+  align-self: flex-start;
+}
+
+.fa-shopping-cart:hover {
+  opacity: 0.4;
+}
+
+#cart {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5em;
+  margin-left: 2em;
+  width: 45%;
+  background-color: moccasin;
+  border: 1px solid black;
 }
