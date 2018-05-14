@@ -190,8 +190,20 @@ function loadItems(inventory) {
   }
 }
 
+function loadRobot() {
+  loadItems(famousRobots);
+}
+
+function loadPuppies() {
+  loadItems(puppies);
+}
+
+function loadPhotos() {
+  loadItems(veryOddStockPhotos);
+}
+
 //Buttons
 
-robotButton.addEventListener('click', loadItems(famousRobots));
-photoButton.addEventListener('click', loadItems(veryOddStockPhotos));
-puppyButton.addEventListener('click', loadItems(puppies));
+robotButton.addEventListener('click', loadRobot);
+photoButton.addEventListener('click', loadPhotos);
+puppyButton.addEventListener('click', loadPuppies);
